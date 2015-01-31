@@ -13,6 +13,11 @@ div {
 
 h1 {
 	color: red;
+	text-align:center;
+}
+
+p {
+	font-family:Times, serif;
 }
 
 img.displayed {
