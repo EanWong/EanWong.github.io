@@ -1,0 +1,211 @@
+<!DOCTYPE HTML>
+<!-- 
+ **********************************************************
+
+             TUFTS COMP 150-IDS HOMEWORK ASSIGNMENT
+
+        Fill in your name, e-mail and answers to questions
+        in the sections provided below.
+
+          All questions are marked up: <li class="q">
+          All answers are marked up:   <li class="a">
+
+
+     PLEASE DO NOT MODIFY ANY THING OTHER THAN THE 
+     NAME, E-MAIL, AND ANSWER FIELDS (you may also add
+     css declarations in the <head> if you need them,
+     but usually you won't.
+
+ **********************************************************
+ -->
+
+
+<html>
+<head>
+<meta charset="utf-8"> 
+<title>Questions for: Tufts COMP 150-IDS Assignment Reading Assignment &#8212; End to End Arguments</title>
+<link rel="stylesheet" type="text/css" href="http://www.cs.tufts.edu/comp/150IDS/style/homework.css" />
+</head>
+
+<body class="homework">
+
+
+<!-- ******************************************************
+	   YOU MUST FILL IN YOUR NAME, UTLN AND EMAIL BELOW!!
+         (You may copy this from an earlier assignment
+                         if you like)
+
+     ****************************************************** -->
+
+
+<div class="student">
+<p>
+<span class="label">Student name: </span>
+Ean Wong
+<br>
+
+<span class="label">LOGIN: </span>
+ewong02
+<br>
+
+<span class="label">E-mail: </span>
+<!-- DON'T FORGET UP UPDATE THE MAILTO: URI BELOW ALONG WITH
+     YOUR EMAIL IN THE ANCHOR.  IT SHOULD LOOK LIKE:
+ <a href="mailto:lady.gaga@cs.tufts.edu">lady.gaga@cs.tufts.edu</a>
+--> 
+
+<a href="mailto:ean.wong@tufts.edu” >ean.wong@tufts.edu</a>
+<br>
+</p>
+</div>
+
+
+
+
+
+<div class="UpperLeftHeader”>
+<p>Tufts COMP 150-IDS (Spring 2015):
+<br>
+Internet-scale Distributed Systems</p>
+</div>
+
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - -
+		HOMEWORK TITLE
+  - -  - - - - - - - - - - - - - - - - - - - - - - -->
+
+
+<div class="headerdiv”>
+<h1>
+Tufts COMP 150-IDS Assignment:<br>End-to-end Arguments
+<br>
+Questions
+</h1>
+</div>
+
+<!-- ******************************************************
+
+              PLEASE ANSWER QUESTIONS IN THE SECTIONS
+	      LABELED class="a” (for answer)
+
+     ****************************************************** -->
+
+
+
+<div class="main”>
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - -
+		QUESTION
+  - -  - - - - - - - - - - - - - - - - - - - - - - -->
+ <div class="qa”>
+<p>You are welcome to write as much as you like, but this is not intended to be a time-consuming assignment.
+In most cases, each question can be answered in one or a few sentences; try to get to the essence quickly. If you
+want to provide supporting detail, that's fine too.</p>
+<p>Remember that you will have a chance to update your answers after class discussion, and before
+your work is assigned a final grade. Don't worry if there are a few questions that you
+don't know how to answer until after the discussion.
+</p>
+
+<ol class="qa”>
+<li class="q">
+Briefly summarize the "end-to-end" argument in your own words. Why does it matter? In what situations is it applicable?
+</li>
+<li class="a">
+<p> End-to-end argument is a helpful lens to use to draw abstraction layers between communication modules and the rest of the system.  
+    The philosophy argues that moving functions higher up (closer to the intended application) can be allowable when the application will necessarily have 
+    to do that function regardless.  
+    This means that in some situations, the redundancy of functions has marginal added benefit at the cost of increased complexity. </p>  
+
+<p> This argument matters in the system design of the communication module, because often anticipating the requirements of the end users 
+    will not sufficiently handle the users requirements, meaning the redundancy is unhelpful or unwanted.  The author defines examples such as:
+	<ul>
+		<li>bit-error checks</li>
+		<li>delivery acknowledgement</li>
+		<li>data encryption</li>
+	</ul>
+</p>
+
+</li>
+
+<li class="q">The end-to-end paper describes a situation at MIT in which end-to-end checking was not done, and
+the result was a system that did not work well enough. What was the problem, and how would more attention to
+the end-to-end argument have helped?
+</li>
+<li class="a">
+
+<p> 
+In the MIT example, the researchers made the fatal assumption that the network transmission (not the channel necessarily) was reliable, such that their method (packet checksums at each gateway) did not anticipate flaws in the transmission by gateways.  Their solution never succeeded in total recovery of any files transmitted / received. 
+</p>
+<p>
+As a result, errors accumulated in packets/files over time with the continued use of the network, so eventually the end-to-end manual checksum was required.  Since this end-to-end check was necessarily done even with their packet checksums, this data loss could have been avoided if this had been implemented originally.
+</p>
+
+</li>
+
+<li class="q">Does proper use of the end-to-end principle help system performance? How and why?</li>
+<li class="a">
+<p>
+
+The end-to-end principle can help system performance, and this is usually through reducing the responsibilities of the communication platforms/modules. Depending on how performance is measured (i.e. real-time voice delay vs. correctness), understanding that end-to-end allows applications to better define their own standards probably allows their specific systems to be optimized.  This is because more specificity for each application requirement is feasible if the end-to-end principle minimizes redundancy in the intermediate steps.
+
+</p> 
+</li>
+
+<li class="q">Does proper use of the end-to-end principle simplify or complicate system design? How and why?</li>
+<li class="a">
+<p>
+
+The argument is that the end-to-end principle should inform system design and layers of abstraction.  I would say that the principle helps consider the system more wholly, and this perspective likely will simplify the design.  Considering what functionality is actually important to which component, again, reduces redundancy. On the other hand, it seems that end-to-end forces each application to build its own system depending on its purposes, so much more work is necessary to achieve the same results if the "lower-level” layers handled more of the responsibility. 
+
+</p> 
+</li>
+
+<li class="q">Consider the postal system. Letters are typically are addressed, mailed and delivered without
+explicit acknowledgement. How, if at all,
+does the "end-to-end" argument apply to the postal system?</li>
+<li class="a">
+<p>The end to end argument applies in that the system is purely designed to move letters from one location to the other.  No other letter checking occurs, and perhaps the fact that the ‘confirmation’ that a letter made it to the intended recipient is another user’s response, no delivery guarantee is necessary.</p>
+</li>
+
+
+<li class="q">Paul Baran explains a reason why packet switching could not have been successful in an all-analog world. Why was digital messaging a necessary pre-requisite for the adoption of packet switching?</li>
+<li class="a”>
+<p>Digital messaging allows for repeaters to be used, meaning that the quality of the signal is not significantly compromised by delays in time.  In contrast, analog system quality were significantly diminished when they were "repeated,” and therefore the packet switching protocol was infeasible.
+</p>
+</li>
+
+<li class="q">What reason does Baran give why packet switching can make a network achieve similar performance
+at less cost than a circuit-switched network?</li>
+<li class="a">
+<p>
+
+His reason was that components did not have to be nearly as precise or reliable as those used for analog systems.  The components simply needed to be redundant.
+
+</p>
+</li>
+
+<li class="q">What reaction did Baran get from the experts at AT&amp;T when he proposed packet-switching? Why?</li>
+<li class="a">
+<p>
+
+The experts were analog experts and gurus.  Wrapping their heads around "switching during communication” was difficult to get behind, especially when the incentive to compete with themselves were too low.  Furthermore, Baran worked at a primarily research, non-development organization, so demonstrating the capabilities of his system were out of the question.
+
+</p>
+</li>
+
+<li class="q">Why did or didn't Baran seek patents on his work?</li>
+<li class="a"><p>His reasoning was that patents would prevent access and wide-spread use of the technology.  His goal was to "broaden the access.” </p></li>
+
+<li class="q">(optional: for fun not credit) What efforts were made to keep this technology secret from the "enemy" in the Soviet Union? Why?</li>
+<li class="a”>
+<p>No effort was made, except in the case of vulnerabilities.  This was because the goal of the technology was meant to be a deterrent, "second-strike” defensive capability not intended to actually attack the Soviet Union.  The thinking was that if the Soviets knew about the technology, their likelihood of attacking was diminished.</p>
+</li>
+
+
+
+</ol>
+
+</div>
+</div>
+</body>
+</html>
