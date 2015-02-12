@@ -41,11 +41,11 @@
 <div class="student">
 <p>
 <span class="label">Student name: </span>
-YOUR-NAME-HERE
+Ean Wong
 <br>
 
 <span class="label">LOGIN: </span>
-YOUR-CS-DEPT-LOGIN-HERE
+ewong02
 <br>
 
 <span class="label">E-mail: </span>
@@ -54,7 +54,7 @@ YOUR-CS-DEPT-LOGIN-HERE
  <a href="mailto:lady.gaga@cs.tufts.edu">lady.gaga@cs.tufts.edu</a>
 --> 
 
-<a href="mailto:YOUR-EMAIL-HERE">YOUR-EMAIL-HERE</a>
+<a href="mailto:ean.wong@tufts.edu">ean.wong@tufts.edu</a>
 <br>
 </p>
 </div>
@@ -108,11 +108,11 @@ specifications, which of the following statements is/are <em>definitely true</em
 
 <ol class="qa">
 <li class="q">The URI is a reference to an HTML document?</li>
-<li class="a">...answer definitely/maybe/definitely-not...and briefly explain...</li>
+<li class="a">Maybe.  While it is probably good practice, URIs do not require the name of the resource to describe anything beyond a way to identify a resource.  The "metadata" of the URI is not guaranteed accurate.</li>
 <li class="q">The URI is absolute?</li>
-<li class="a">...your answer here...</li>
+<li class="a">True.  Although relative referencing is allowed, in this scenario the "//" implies an absolute path that follows.</li>
 <li class="q">If you do an HTTP GET on this URI from anywhere in the world, you will get the same thing? Which principle that we studied does this illustrate?</li>
-<li class="a">...briefly explain why or why not, and which principle is illustrated...</li>
+<li class="a">This is guaranteed, within a "short" period of time.  The illustrated principle is "idempotence."  This is to reinforce the architecture for caching, and in TBL's words, "it leads to the whole concept of the Web as an information space rather than a computing program." The thinking is that GET should not change the "state" of the resource.</li>
 </ol>
 
 </li>
@@ -125,9 +125,9 @@ According to TAG Finding <a href="http://www.w3.org/2001/tag/doc/metaDataInURI-3
 <ol class="qa">
 <li class="q">The Web page you get should
 be about discounts on shoes? </li>
-<li class="a">...Yes or no? Briefly explain...</li>
+<li class="a">While not guaranteed, the web page should, under good practice principles, be about discounts on shoes.  Usually, this metadata, if not intended to deceive the client, is for the benefit of the user.</li>
 <li class="q">If you change the URI to read <code>http://greatdeals.com/discounts?item=gloves</code>, any Web page you get should be about discounts on gloves?</li>
-<li class="a">...Yes or no? Briefly explain...</li>
+<li class="a">Maybe.  This is not guaranteed at all by the owner of the resources.  It is possible that the termuses a search engine to come up with discounts, but again, the transformation of that URI is not guaranteed to be usable.</li>
 </ol>
 </li>
 
@@ -137,13 +137,13 @@ According to the ABNF in <a href="http://tools.ietf.org/html/rfc3986">RFC 3986</
 
 <ol class="qa">
 <li class="q">The nonterminal (rule) that matches <code>http</code> is?</li>
-<li class="a">...your answer here...</li>
+<li class="a">':'</li>
 <li class="q">The nonterminal that matches <code>lat=42.408724&amp;long=-71.116179</code> is?</li>
-<li class="a">...your answer here...</li>
+<li class="a">';'</li>
 <li class="q">True or false, the URI has a <code>hier-part</code>?</li>
-<li class="a">If true, then which part of the URI is the <code>hier-part</code>?</li>
+<li class="a">True. example.com/maps</li>
 <li class="q">True or false, the URI has a <code>path</code>?</li>
-<li class="a">If true, then which part of the URI is the <code>path</code>?</li>
+<li class="a">True. /maps</li>
 </ol>
 
 </li>
