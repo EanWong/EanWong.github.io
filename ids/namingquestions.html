@@ -1,0 +1,169 @@
+<!DOCTYPE HTML>
+<!-- 
+ **********************************************************
+
+             TUFTS COMP 150-IDS HOMEWORK ASSIGNMENT
+
+        Fill in your name, e-mail and answers to questions
+        in the sections provided below.
+
+          All questions are marked up: <li class="q">
+          All answers are marked up:   <li class="a">
+
+
+     PLEASE DO NOT MODIFY ANY THING OTHER THAN THE 
+     NAME, E-MAIL, AND ANSWER FIELDS (you may also add
+     css declarations in the <head> if you need them,
+     but usually you won't.
+
+ **********************************************************
+ -->
+
+
+<html>
+<head>
+<meta charset="utf-8"> 
+<title>Questions for: Tufts COMP 150-IDS Assignment Reading Assignment &#8212; Naming (Part I)</title>
+<link rel="stylesheet" type="text/css" href="http://www.cs.tufts.edu/comp/150IDS/style/homework.css" />
+</head>
+
+<body class="homework">
+
+
+<!-- ******************************************************
+	   YOU MUST FILL IN YOUR NAME, UTLN AND EMAIL BELOW!!
+         (You may copy this from an earlier assignment
+                         if you like)
+
+     ****************************************************** -->
+
+
+<div class="student">
+<p>
+<span class="label">Student name: </span>
+Ean Wong
+<br>
+<span class="label">LOGIN: </span>
+ewong02
+<br>
+
+<span class="label">E-mail: </span>
+<!-- DON'T FORGET UP UPDATE THE MAILTO: URI BELOW ALONG WITH
+     YOUR EMAIL IN THE ANCHOR.  IT SHOULD LOOK LIKE:
+ <a href="mailto:lady.gaga@cs.tufts.edu">lady.gaga@cs.tufts.edu</a>
+--> 
+
+<a href="mailto:ean.wong@tufts.edu">ean.wong@tufts.edu</a>
+<br>
+</p>
+</div>
+
+
+
+
+
+<div class="UpperLeftHeader">
+<p>Tufts COMP 150-IDS (Spring 2015):
+<br>
+Internet-scale Distributed Systems</p>
+</div>
+
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - -
+		HOMEWORK TITLE
+  - -  - - - - - - - - - - - - - - - - - - - - - - -->
+
+
+<div class="headerdiv">
+<h1>
+Tufts COMP 150-IDS Assignment:<br>Naming
+<br>
+Questions - Part I
+</h1>
+</div>
+
+<!-- ******************************************************
+
+              PLEASE ANSWER QUESTIONS IN THE SECTIONS
+	      LABELED class="a" (for answer)
+
+     ****************************************************** -->
+
+
+
+<div class="main">
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - -
+		QUESTION
+  - -  - - - - - - - - - - - - - - - - - - - - - - -->
+ <div class="qa">
+<p>Please answer each of the following questions.</p>
+
+
+<ol class="qa">
+<li class="q">
+Please make a list of issues or design characteristics that one
+should consider in designing a naming system.
+List as many as you can (within reason).
+I'll start you with a couple:
+</li>
+<li class="a">
+Issues and design characteristics that should be considered when
+designing a new naming system include:
+<ul>
+
+<li>What should be nameable using this naming system?</li>
+<li>Where will the names be used, and by whom?</li>
+<li>Is the naming space easily extensible? </li>
+<li>Can a resource have more than one name associated with it? </li>
+<li>What character set is allowable in the naming system? </li>
+<li>Who will be using the naming system? Are the names easily memorable for people? </li>
+<li>In what scope (context) will names make sense in? </li>
+<li>Who defines the name of a thing?</li>
+<li>Can things that change over time still have the same name? </li>
+<li>Should the name have metadata associated with it? </li>
+<li>Should the metadata be considered reliable? </li>
+<li>Depending on scoping, how are naming conflicts avoided? </li>
+<li>How large can a name be? </li>
+<li>How are fragile names handled? </li>
+
+</ul>
+				      
+</li>
+
+<li class="q">Choose an existing naming system that interests you.
+Examples include file naming in Unix/Linux systems, the phone
+numbers discussed in your reading, etc. Many good examples
+are related to computer systems, but if you prefer 
+you can choose something else. Please choose a system that's well known, or else one that you can describe in sufficient detail here that
+we can understand your analysis.
+<br>
+<br>
+For the system you choose, please explain where it is used, and what can be named, and then briefly explain 
+how the system you choose does or does not deal with the issues you list above.
+If your list above is very long, then just choose up to 8 important ones to deal with here.
+</li>
+<li class="a">
+<p> The email naming system (ie ean.wong@tufts.edu, @gmail.com, etc) is globally used and seemingly straightforward. Email is "a method of exchanging ditigal messages from an author to one or more recipients." Most email systems operate in computer networks or across the Internet. </p>
+
+<p>A number of structures exist that can be named.  It seems that people and groups are typical for things that can be named, but I'm aware of automatic systems that can also have names.  Also, emails are usually associated with a server or organization, and these all can have names as well (ie gmail.com, epix.net, etc.). </p>
+
+<p>In the email architecture, it seems that anything that would want/require ways of receiving digital messages should hence be nameable to be useful.  Google Groups can have names, personal people can have names, and a single entity can actually have multiple names associated with it. </p>
+
+<p>The names can be used by anyone with access to the network on which the email addresses are defined in.  The Internet is one such network, as are internal networks.  A noteable characteristic is that a sender need not have an email address to send an email. </p>
+
+<p>Depending on the scenario, names are usually meant to be memorable and "logical" for a person, not a software application. </p>
+
+<p>The people who name the entity depends.  In business contexts or, more relevantly, the Tufts administrative structure, the organization names individuals.  Therefore, the "owner" of the email (ie "my TUFTS email, my PERSONAL email) is usually the one who names part of it. The owner of the server in wwhich the account is hosted names the server. </p>
+
+<p>Naming conflicts are prevented hierarchically.  The server name is administrated, often, through the DNS, but the naming within the server is administrated by the server administrators. </p>
+
+<p>Fragile names are not handled specifically, but mail forwarding is a simple way devised to give entities a way of moving to a  new address while still handling data on an old one.  If the server fails, however, the connection is broken and the forwarding no longer works. </p>
+
+</li>
+</ol>
+
+</div>
+</div>
+</body>
+</html>
