@@ -1,0 +1,175 @@
+<!DOCTYPE HTML>
+<!-- 
+ **********************************************************
+
+             TUFTS COMP 150-IDS HOMEWORK ASSIGNMENT
+
+        Fill in your name, e-mail and answers to questions
+        in the sections provided below.
+
+          All questions are marked up: <li class="q">
+          All answers are marked up:   <li class="a">
+
+
+     PLEASE DO NOT MODIFY ANY THING OTHER THAN THE 
+     NAME, E-MAIL, AND ANSWER FIELDS (you may also add
+     css declarations in the <head> if you need them,
+     but usually you won't.
+
+ **********************************************************
+ -->
+
+
+<html>
+<head>
+<meta charset="utf-8"> 
+<title>Questions for: Tufts COMP 150-IDS Assignment Reading Assignment &#8212; From Documents to Applications</title>
+<link rel="stylesheet" type="text/css" href="http://www.cs.tufts.edu/comp/150IDS/style/homework.css" />
+</head>
+
+<body class="homework">
+
+
+<!-- ******************************************************
+	   YOU MUST FILL IN YOUR NAME, UTLN AND EMAIL BELOW!!
+         (You may copy this from an earlier assignment
+                         if you like)
+
+     ****************************************************** -->
+
+
+<div class="student">
+<p>
+<span class="label">Student name: </span>
+Ean Wong
+<br>
+
+<span class="label">LOGIN: </span>
+ewong02
+<br>
+
+<span class="label">E-mail: </span>
+<!-- DON'T FORGET UP UPDATE THE MAILTO: URI BELOW ALONG WITH
+     YOUR EMAIL IN THE ANCHOR.  IT SHOULD LOOK LIKE:
+ <a href="mailto:lady.gaga@cs.tufts.edu">lady.gaga@cs.tufts.edu</a>
+--> 
+
+<a href="mailto:ean.wong@tufts.edu">ean.wong@tufts.edu</a>
+<br>
+</p>
+</div>
+
+
+
+
+
+<div class="UpperLeftHeader">
+<p>Tufts COMP 150-IDS (Spring 2015):
+<br>
+Internet-scale Distributed Systems</p>
+</div>
+
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - -
+		HOMEWORK TITLE
+  - -  - - - - - - - - - - - - - - - - - - - - - - -->
+
+
+<div class="headerdiv">
+<h1>
+Tufts COMP 150-IDS Assignment:<br>From Documents to Applications
+<br>
+Questions
+</h1>
+<div style="text-align:left">
+<p>As usual, you will have the opportunity
+to update your answers after class discussion. 
+<em style="color:red">Some of the questions may be difficult to answer before we have class discussion: for the preliminary submission, just do the ones you can.</em>
+As usual, your grade will based almost entirely on your final answers, which you will provide next week, but do think about all of the questions in preparation for class.
+</p>
+<p>Some of these questions ask you to explain terms like <em>Turing-completeness</em>
+which are covered only briefly in the findings. 
+You can use online sources like Wikipedia to find out about them, or else
+get explanations in class on the 8th.</p>
+</div>
+</div>
+
+<!-- ******************************************************
+
+              PLEASE ANSWER QUESTIONS IN THE SECTIONS
+	      LABELED class="a" (for answer)
+
+     ****************************************************** -->
+
+
+
+<div class="main">
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - -
+		QUESTION
+  - -  - - - - - - - - - - - - - - - - - - - - - - -->
+ <div class="qa">
+<p>Please answer each of the following questions.</p>
+
+
+<ol class="qa">
+
+<li class="q">Why is it important to create Web content from which  computer programs can extract information automatically? Give several examples of things that the Web does for us today that would not be possible if such information extraction were not practical.
+</li>
+<li class="a">
+One key goal of the Web is universal accessibility.  One of the Web’s tenets was to make any resources on the Web not only readable by humans, but accessible for the use of computers as well.  It is therefore natural to extend this principle of accessibility to the way that Web content itself is stored and managed by each node in the Web.  In the opposite end of the spectrum, making the information difficult to extract automatically by computers goes against the grain of how the Web provided value and gained traction as a technology.  Services and technologies now vital to the way people interact with the Web would not be possible in this less accessible alternative.  This includes automated indexers such as web crawlers would not be possible without this information extraction.  Services such as Google Search would have a much harder time determining a hit’s relevance to a particular search term.
+</li>
+
+<li class="q">Briefly: what is the difference between a declarative and an imperative language? What does the <a href="http://www.w3.org/2001/tag/doc/leastPower.html">The Rule of Least Power</a> say about the advantage(s) of using declarative languages on the Web.
+</li>
+<li class="a">
+A declarative language is suited to express intention by the programmer but ultimately leaves it to the machine to determine the appropriate way for it to execute that intention.  By this definition, it makes sense that declarative languages are the preferred languages on the Web; it is because the language provides the most flexibility for machines to execute on the code in any variety of ways that best suits that machine.  Furthermore, the declarative form further makes the information easier to analyze, secure, and identify.
+</li>
+
+<li class="q">What is <em>Turing-completeness</em>? Name a Turing-complete language that is commonly used to create Web documents and applications.
+What is the important characteristic of Turing-complete languges that the finding discusses?
+</li>
+<li class="a">
+Irrespective of time constraints or programmability, a machine is Turing complete if it can simulate any other computational aspects of another real-world computer.  Javascript is an example of a Turing complete language often used by the Web to create documents or applications.  The article discusses how programs written in Turing complete languages, by nature, are difficult to interpret without running the program itself.
+</li>
+
+<li class="q">
+Name three Turing complete languages that you know how to use (or that you know of).
+</li>
+<li class="a">
+<ol>
+<li>C++<li>
+<li>Python<li>
+<li>Matlab<li>
+</ol>
+</li>
+
+<li class="q">
+Name three declarative languages that you know how to use (or that you know of).
+</li>
+<li class="a">
+<ol>
+<li>HTML</li>
+<li>CSS<li>
+<li>SQL<li>
+</ol>
+</li>
+
+<li class="q">Should we ever use non-declarative languages for content sent to Web clients? Why or why not? If yes, then how should we choose which to use when?
+</li>
+<li class="a">
+For content sent to Web clients, using a non-declaritive languages such as Javascript will depend heavily on the application needed.  Javascript has more functionality for the web application to take advantage of, but in addition to this Javascript also obfuscates the information associated with the web application. While I understand that declarative languages are generally vital for the Web’s success, more powerful languages can piggyback off of the traction gained in the Web to provide valuable tools that were otherwise unavailable before a universal network. Declarative languages are generally understood to be weaker than non-declarative languages, and picking one over the other is dependent on the Rule of the Lowest Power.
+</li>
+
+<li class="q">Give a real-world example of a Web application that uses client-side JavaScript logic to navigate states. Explain how this application keeps track of states (to the extent you can tell)? Can you email links to states of the application to other users? Does the fwd/back button work within the application? (Extra credit: can you explain how the application is doing this? Which browser features is it using? To answer this, you have to know a lot about browsers and their APIs, so that's why this is extra credit.
+</li>
+<li class="a">
+Google Maps is a classic example that uses JavaScript on the client side to navigate states.  The application keeps track of states by modifying the URI to store the position of the map, the zoom, and the points of interest potentially marked on the map.  Furthermore, JavaScript tracks the cursor of the mouse as well as any associated actions to then perform a panning across maps.  In addition to this, the JavaScript allows for asynchronous requests to the server for more images that are used to populate the map before the user scrolls to a predicted part of a map.  Forward and Back buttons work within this application.
+</li>
+
+</ol>
+
+</div>
+</div>
+</body>
+</html>
