@@ -1,0 +1,132 @@
+/*
+ *  Stylesheet for COMP 150-IDS Final Paper adopted from homework style sheet provided by Noah Mendelsohn - 2012 .
+ *  Adopted by Ean Wong
+ *  
+ */
+
+
+/* -------------------------------------------------------------
+
+		Front matter - Page title
+
+   ------------------------------------------------------------- */
+
+body {
+ 	margin-left:auto; 
+ 	margin-right:auto; 
+	max-width:30cm;
+	width:90%;
+}
+
+.headerdiv {
+	clear:both;
+	text-align:center;
+	margin-bottom:2em;
+	margin-right:5%;
+	padding-top:0.5em;
+}
+
+.headerdiv h1 {
+        color:blue;
+	font-size:150%;
+}
+
+.headerdiv h1 span.date {
+	font-size:90%;
+	font-style:italic;
+}
+
+
+.headerdiv p {
+}
+
+
+/* -------------------------------------------------------------
+		Headers
+   ------------------------------------------------------------- */
+
+/* main topic headings */
+h3 {
+	color:blue;
+}
+
+/* sub topic headings */
+
+h4 {
+	font-size:90%;
+	font-style:italic;
+}
+
+/* -------------------------------------------------------------
+		Lists
+   ------------------------------------------------------------- */
+
+li {
+	margin-top:.3em;
+}
+
+
+/* -------------------------------------------------------------
+               Student Identification at the top
+   ------------------------------------------------------------- */
+
+div.student {
+	float:right;
+	max-width: 10cm;
+	margin-left:0;
+	margin-right:10%;
+	margin-top:0;
+	margin-bottom:0;
+	padding:0;
+}
+
+div.student p {
+	text-align:right;
+	margin:0;
+	padding;
+}
+
+div.student .label {
+	text-transform:uppercase;
+	color:purple;
+}
+
+div.student span {
+	font-weight:bold;
+}
+
+div.bib{
+}
+
+/* -------------------------------------------------------------
+
+		Course identifier from navigator.php
+
+       This tends to appear on all except the main course page.
+
+   ------------------------------------------------------------- */
+
+
+div.UpperLeftHeader {
+	float:left;
+	margin:0  2em 0 0;
+	padding:0;
+}
+
+/* The actual text of the course title. */
+div.UpperLeftHeader p {
+	margin:0;
+	padding:0;
+	color:grey;
+}
+
+
+/* -------------------------------------------------------------
+
+         Preformatted code examples
+
+   ------------------------------------------------------------- */
+
+pre {
+    margin-left:1cm;
+}
