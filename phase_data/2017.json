@@ -1,4 +1,4 @@
-{     //From http://api.usno.navy.mil/moon/phase?year=2017, in UT
+{     
       "error":false,
       "apiversion":"2.0.0",
       "year":2017,

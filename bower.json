@@ -1,0 +1,21 @@
+{
+  "name": "Take.a.Step",
+  "homepage": "https://github.com/EanWong/EanWong.github.io",
+  "authors": [
+    "Ean Wong <eanwong6@gmail.com>"
+  ],
+  "description": "",
+  "main": "index.html",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.2.1"
+  }
+}
