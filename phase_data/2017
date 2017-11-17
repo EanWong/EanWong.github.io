@@ -1,0 +1,256 @@
+{     //From http://api.usno.navy.mil/moon/phase?year=2017, in UT
+      "error":false,
+      "apiversion":"2.0.0",
+      "year":2017,
+      "month":1,
+      "day":1,
+      "numphases":50,
+      "datechanged":false, 
+      "phasedata":[
+            {
+               "phase":"First Quarter",
+               "date":"2017 Jan 05",
+               "time":"19:47"
+            },
+            {
+               "phase":"Full Moon",
+               "date":"2017 Jan 12",
+               "time":"11:34"
+            },
+            {
+               "phase":"Last Quarter",
+               "date":"2017 Jan 19",
+               "time":"22:13"
+            },
+            {
+               "phase":"New Moon",
+               "date":"2017 Jan 28",
+               "time":"00:07"
+            },
+            {
+               "phase":"First Quarter",
+               "date":"2017 Feb 04",
+               "time":"04:19"
+            },
+            {
+               "phase":"Full Moon",
+               "date":"2017 Feb 11",
+               "time":"00:33"
+            },
+            {
+               "phase":"Last Quarter",
+               "date":"2017 Feb 18",
+               "time":"19:33"
+            },
+            {
+               "phase":"New Moon",
+               "date":"2017 Feb 26",
+               "time":"14:58"
+            },
+            {
+               "phase":"First Quarter",
+               "date":"2017 Mar 05",
+               "time":"11:32"
+            },
+            {
+               "phase":"Full Moon",
+               "date":"2017 Mar 12",
+               "time":"14:54"
+            },
+            {
+               "phase":"Last Quarter",
+               "date":"2017 Mar 20",
+               "time":"15:58"
+            },
+            {
+               "phase":"New Moon",
+               "date":"2017 Mar 28",
+               "time":"02:57"
+            },
+            {
+               "phase":"First Quarter",
+               "date":"2017 Apr 03",
+               "time":"18:39"
+            },
+            {
+               "phase":"Full Moon",
+               "date":"2017 Apr 11",
+               "time":"06:08"
+            },
+            {
+               "phase":"Last Quarter",
+               "date":"2017 Apr 19",
+               "time":"09:57"
+            },
+            {
+               "phase":"New Moon",
+               "date":"2017 Apr 26",
+               "time":"12:16"
+            },
+            {
+               "phase":"First Quarter",
+               "date":"2017 May 03",
+               "time":"02:47"
+            },
+            {
+               "phase":"Full Moon",
+               "date":"2017 May 10",
+               "time":"21:42"
+            },
+            {
+               "phase":"Last Quarter",
+               "date":"2017 May 19",
+               "time":"00:33"
+            },
+            {
+               "phase":"New Moon",
+               "date":"2017 May 25",
+               "time":"19:44"
+            },
+            {
+               "phase":"First Quarter",
+               "date":"2017 Jun 01",
+               "time":"12:42"
+            },
+            {
+               "phase":"Full Moon",
+               "date":"2017 Jun 09",
+               "time":"13:10"
+            },
+            {
+               "phase":"Last Quarter",
+               "date":"2017 Jun 17",
+               "time":"11:33"
+            },
+            {
+               "phase":"New Moon",
+               "date":"2017 Jun 24",
+               "time":"02:31"
+            },
+            {
+               "phase":"First Quarter",
+               "date":"2017 Jul 01",
+               "time":"00:51"
+            },
+            {
+               "phase":"Full Moon",
+               "date":"2017 Jul 09",
+               "time":"04:07"
+            },
+            {
+               "phase":"Last Quarter",
+               "date":"2017 Jul 16",
+               "time":"19:26"
+            },
+            {
+               "phase":"New Moon",
+               "date":"2017 Jul 23",
+               "time":"09:46"
+            },
+            {
+               "phase":"First Quarter",
+               "date":"2017 Jul 30",
+               "time":"15:23"
+            },
+            {
+               "phase":"Full Moon",
+               "date":"2017 Aug 07",
+               "time":"18:11"
+            },
+            {
+               "phase":"Last Quarter",
+               "date":"2017 Aug 15",
+               "time":"01:15"
+            },
+            {
+               "phase":"New Moon",
+               "date":"2017 Aug 21",
+               "time":"18:30"
+            },
+            {
+               "phase":"First Quarter",
+               "date":"2017 Aug 29",
+               "time":"08:13"
+            },
+            {
+               "phase":"Full Moon",
+               "date":"2017 Sep 06",
+               "time":"07:03"
+            },
+            {
+               "phase":"Last Quarter",
+               "date":"2017 Sep 13",
+               "time":"06:25"
+            },
+            {
+               "phase":"New Moon",
+               "date":"2017 Sep 20",
+               "time":"05:30"
+            },
+            {
+               "phase":"First Quarter",
+               "date":"2017 Sep 28",
+               "time":"02:53"
+            },
+            {
+               "phase":"Full Moon",
+               "date":"2017 Oct 05",
+               "time":"18:40"
+            },
+            {
+               "phase":"Last Quarter",
+               "date":"2017 Oct 12",
+               "time":"12:25"
+            },
+            {
+               "phase":"New Moon",
+               "date":"2017 Oct 19",
+               "time":"19:12"
+            },
+            {
+               "phase":"First Quarter",
+               "date":"2017 Oct 27",
+               "time":"22:22"
+            },
+            {
+               "phase":"Full Moon",
+               "date":"2017 Nov 04",
+               "time":"05:23"
+            },
+            {
+               "phase":"Last Quarter",
+               "date":"2017 Nov 10",
+               "time":"20:36"
+            },
+            {
+               "phase":"New Moon",
+               "date":"2017 Nov 18",
+               "time":"11:42"
+            },
+            {
+               "phase":"First Quarter",
+               "date":"2017 Nov 26",
+               "time":"17:03"
+            },
+            {
+               "phase":"Full Moon",
+               "date":"2017 Dec 03",
+               "time":"15:47"
+            },
+            {
+               "phase":"Last Quarter",
+               "date":"2017 Dec 10",
+               "time":"07:51"
+            },
+            {
+               "phase":"New Moon",
+               "date":"2017 Dec 18",
+               "time":"06:30"
+            },
+            {
+               "phase":"First Quarter",
+               "date":"2017 Dec 26",
+               "time":"09:20"
+            }
+      ]
+}
