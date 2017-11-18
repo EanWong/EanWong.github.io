@@ -78,6 +78,8 @@ $.getJSON("/phase_data/2017.json", function(data) {
   //Set phase string
   document.getElementById("next_phase").innerHTML = next_phase.phase 
 
+  //Set initial phase countdown string
+  timeBetweenDates(next_phase_time);
 });
 }
 
