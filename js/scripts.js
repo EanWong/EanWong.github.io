@@ -1,11 +1,28 @@
+
+var months = ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"]
 var timer;
 //Goes chronologically
 function isNextPhase(phase) {
 
   //this arg will be supplied as current date
-  var todays_time = this.valueOf()
-  var phase_time = Date.parse(phase.date + ' ' + phase.time)
+  var todays_time = this.valueOf();
+
+  var phase_time = getDateFromPhaseData(phase).getTime()
+
   return phase_time > todays_time
+}
+
+function getDateFromPhaseData(phase_datum) {
+
+  var p_date = phase_datum.date.split(" ");
+  var p_time = phase_datum.time.split(":");
+  var p_year = p_date[0],
+      p_month = months.indexOf(p_date[1].toLowerCase()),
+      p_day = p_date[2],
+      p_hour = p_time[0],
+      p_minute = p_time[1];
+
+  return new Date(p_year, p_month, p_day, p_hour, p_minute)
 }
 
 function timeBetweenDates(toTime) {
@@ -51,7 +68,7 @@ $.getJSON("/phase_data/2017.json", function(data) {
   var next_phase = data.phasedata.find(isNextPhase, todays_time)
 
   //Get time of phase in UT
-  var next_phase_time = Date.parse(next_phase.date + ' ' + next_phase.time)
+  var next_phase_time = getDateFromPhaseData(next_phase).getTime();
 
   //Set timer
   timer = setInterval(function() {
@@ -64,4 +81,4 @@ $.getJSON("/phase_data/2017.json", function(data) {
 });
 }
 
-init();
+init();  
