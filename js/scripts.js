@@ -57,7 +57,7 @@ function timeBetweenDates(toTime) {
 //init function
 function init() {
 
-$.getJSON("/phase_data/2017.json", function(data) {
+$.getJSON("/phase_data/2018.json", function(data) {
   //Data is in UT
 
   //Get current date and time in UT
